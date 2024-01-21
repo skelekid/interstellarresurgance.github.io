@@ -1,0 +1,143 @@
+/* add courier font */
+@font-face {
+    font-family: 'courier-pixel';
+    src: url('assets/fonts/courier-pixel-monospaced-webfont.woff2') format('woff2'),
+         url('assets/fonts/courier-pixel-monospaced-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* add 8bitoperator font */
+@font-face {
+    font-family:"assets/fonts/8bitoperator JVE";
+    src:url("assets/fonts/8bitoperator_jve.eot?") format("eot"),
+    url("assets/fonts/8bitoperator_jve.woff") format("woff"),
+    url("assets/fonts/8bitoperator_jve.ttf") format("truetype"),
+    url("assets/fonts/8bitoperator_jve.svg#8bitoperator-JVE") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* m akes images crisp */
+.basedimg {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+ }
+
+.galleryimg {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  border: 2px solid #666666;
+ }
+
+/* bg black */
+ body{
+    background-color: black;
+
+}
+
+/* kill all padding */
+* {
+    margin:0;
+    padding:0;
+    border: none; 
+}
+
+/* hover classes */
+.hoverhide{opacity: 1;}
+.hoverhide:hover{opacity: 0;transition: 0.05s;}
+
+.hovershow{opacity: 0;}
+.hovershow:hover{opacity: 1;transition: 0.05s;}
+
+/* yeah */
+p{
+    color: white;
+    font-family: Courier New;
+    font-size: 100%;
+    text-rendering: geometricPrecision; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+}
+
+.yellowhover:hover{
+    color: yellow;
+}
+
+.redhover:hover{
+    color: red;
+    font-weight: bolder;
+}
+
+.bluehover:hover{
+    color: slateblue;
+    font-weight: bolder;
+}
+div.thing {
+        height: 160px;
+        background-color: black;
+        border: 2px solid #666666;
+}
+div.navbar {
+        margin: 0px;
+        top: 0;
+        height: 160px;
+        background-image: url(assets/sanstile3.png);
+        background-position: 0px;
+        animation: bgscroll linear infinite;
+        animation-duration: 156s;
+        border: 2px solid #666666;
+    }
+div.navbaro {
+        margin: 0px;
+        top: 0;
+        height: 160px;
+        background-image: url(assets/thug2.png);
+        background-position: 0px;
+        animation: bgscroll linear infinite;
+        animation-duration: 156s;
+        border: 2px solid #666666;
+    }
+@keyframes bgscroll{
+    0% {background-position: 0px;}
+    100% {background-position: -6240px;}
+}
+
+@keyframes fadein{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.sticky{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}
+
+div.sticky.p{
+    margin: 0px 0px;
+}
+
+.FAQ{
+    font-family: "8bitoperator JVE";
+}
+
+.fadein{
+    opacity: 0;
+    animation: fadein ease-out;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Interstellar Resurgence</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image" href="assets/icon.png">
+    <meta charset="utf-8">
+    <meta property="og:title" content="Interstellar Resurgence" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="i like the part where I" />
+    <meta property="og:image" content="assets/hi.png">
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Hide the scrollbars */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1; /* Place the background behind other elements */
+            animation: scrollBackground 15s linear infinite; /* Adjust the duration as needed */
+            background-image: url('assets/gamewebsitebg.png');
+            background-size: auto 25%; /* Increase the size to cover both axes */
+            background-repeat: repeat;
+        }
+
+        @keyframes scrollBackground {
+            from {
+                background-position: 0% 0%;
+            }
+
+            to {
+                background-position: 100% 100%; /* Move diagonally to cover both axes */
+            }
+        }
+
+        .white-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 255px; /* Adjust the width as needed */
+            background-color: white;
+            z-index: 0; /* Place it behind other elements */
+        }
+
+        .black-box {
+            position: fixed;
+            top: 0;
+            left: 1;
+            height: 100%;
+            width: 250px; /* Adjust the width as needed */
+            background-color: black;
+            z-index: 1; /* Place it above the white box */
+        }
+
+        .center-content {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white; /* Set the color as needed */
+            z-index: 2; /* Place it above the black box */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- White Box -->
+    <div class="white-box"></div>
+
+    <!-- Black Box -->
+    <div class="black-box"></div>
+
+    <!-- Your existing content goes here -->
+
+    <div style="position: absolute; opacity: 0; width: 0px; height: 0px; transform: translateX(20em);">
+        <audio src="assets/websong.mp3" controls autoplay loop style="position: absolute;">
+            <p>Dawg your browser sucks and can't load the music please get better.</p>
+            <embed name="FUCKING HELL" src="assets/websong.mp3" loop="true" hidden="true" autostart="true">
+        </audio>
+    </div>
+
+    <div class="center-content">
+        <!-- Your center content -->
+        <h1 style="padding-bottom: 70px">Progress Bullshit</h1>
+        <div style="transform: translateY(-1em);">
+            <!-- Your other content -->
+            <a href="devlogs">DEVLOGS</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
